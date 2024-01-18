@@ -1,0 +1,47 @@
+{
+  "name": "@trandx/crop-image",
+  "private": false,
+  "version": "1.0.5",
+  "author": "Trandx",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "linkDirectory": true,
+    "@products:registry": "https://registry.npmjs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trandx/crop-image.git"
+  },
+  "homepage": "https://github.com/Trandx/crop-image/blob/develop/README.md",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prepublish": "npm run build && npm version patch "
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  },
+  "description": "## Mentions [![Start](https://img.shields.io/github/stars/Trandx/crop-image?style=flat-square)](https://github.com/Trandx/crop-image) [![Total Downloads](https://img.shields.io/github/downloads/trandx/crop-image/total)](https://www.npmjs.com/package/@trandx/crop-image) [![Known Vulnerabilities](https://snyk.io/test/github/Trandx/crop-image/badge.svg)](https://snyk.io/test/github/Trandx/crop-image/badge) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)",
+  "bugs": {
+    "url": "https://github.com/Trandx/crop-image/issues"
+  },
+  "keywords": [
+    "crop",
+    "image"
+  ],
+  "license": "ISC"
+}

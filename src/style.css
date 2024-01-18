@@ -1,0 +1,138 @@
+.space-x-1 > *{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.flex {
+justify-content: center;
+}
+.justify-center{
+  display: flex;
+}
+.opacity-70 {
+  opacity: 0.7;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.left {
+  left: calc(50% - 2px);
+}
+.top-0 {
+  top: 0%;
+}
+.top-50 {
+  top: 50%;
+}
+.w-256 {
+  width: 256px;
+}
+.h-256 {
+  height: 256px;
+}
+.h-512 {
+  height: 512px;
+}
+.w-512 {
+  width: 512px;
+}
+.relative {
+  position: relative;
+}
+.top-5 {
+  top: 1.25rem /* 20px */;
+}
+
+.absolute {
+  position: absolute;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.border-dotted {
+  border-style: dotted !important;
+}
+.border-primary {
+  border-color: rgb(0 184 179) !important;
+}
+.border-2{
+  border: 2px solid;
+}
+.resizer:hover {
+  background: #0d47a1;
+}
+.resizer {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  border-radius: 100px;
+  border: 1px solid white;
+  user-select: none;
+  z-index: 10;
+  background: #1e88e5;
+}
+
+.resizer.top-left {
+  top: -5px;
+  left: -5px;
+  cursor: nwse-resize;
+}
+
+.resizer.bottom-left {
+  bottom: -5px;
+  left: -5px;
+  cursor: nesw-resize;
+}
+
+.resizer.top-right {
+  top: -5px;
+  right: -5px;
+  cursor: nesw-resize;
+}
+
+.resizer.bottom-right {
+  bottom: -5px;
+  right: -5px;
+  cursor: nwse-resize;
+}
+
+.resizer.mid-top {
+  top: -5px;
+  left: calc(50% - 5px);
+  cursor: ns-resize;
+}
+
+.resizer.mid-left {
+  left: -5px;
+  top: calc(50% - 5px);
+  cursor: ew-resize;
+}
+
+.resizer.mid-right {
+  right: -5px;
+  top: calc(50% - 5px);
+  cursor: ew-resize;
+}
+
+.resizer.mid-bottom {
+  bottom: -5px;
+  left: calc(50% - 5px);
+  cursor: ns-resize;
+}
+.resizer.rotate {
+  top: -30px;
+  left: calc(50% - 5px);
+  cursor: url("https://findicons.com/files/icons/1620/crystal_project/16/rotate_ccw.png"),
+    auto;
+}
+
+.rotate-link {
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  top: -20px;
+  left: calc(50% + 0.5px);
+  z-index: -1;
+}

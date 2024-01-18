@@ -1,0 +1,25 @@
+name: Publish Package to npmjs
+on:
+  release:
+    types: [created]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.14'
+          registry-url: 'https://registry.npmjs.org'
+                  # Configure Git
+      - name: Git configuration
+        run: |
+            git config --global user.email "null"
+            git config --global user.name "Trandx"
+      - run: npm ci
+      - run: npm publish --access public
+        env:
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+            

@@ -1,0 +1,39 @@
+{
+    "name": "@trandx/crop-image",
+    "private": false,
+    "version": "1.0.4",
+    "author": "Trandx",
+    "type": "module",
+    "files": [
+      "dist",
+      "index.d.ts"
+    ],
+    "main": "./dist/index.umd.cjs",
+    "module": "./dist/index.js",
+    "types": "./index.d.ts",
+    "exports": {
+      "types": "./index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    },
+    "publishConfig": {
+      "directory": "dist",
+      "linkDirectory": true,
+      "@products:registry": "https://registry.npmjs.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Trandx/crop-image.git"
+    },
+    "homepage": "https://github.com/Trandx/crop-image/blob/develop/README.md",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "prepublish": "npm run build && npm version patch "
+    },
+    "devDependencies": {
+      "typescript": "^5.3.3",
+      "vite": "^5.0.11"
+    }
+  }
+  
